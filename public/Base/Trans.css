@@ -1,0 +1,15 @@
+.TransitionContainer {
+    animation: TransitionPage 0.25s;
+}
+
+
+@keyframes TransitionPage {
+    from{
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+    to {
+        opacity: 0;
+        transform: rotateX('0');
+    }
+}

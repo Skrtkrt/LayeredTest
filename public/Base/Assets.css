@@ -1,0 +1,1197 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* Header Container */
+header{
+  min-width: 100vw;
+}
+.PageHeader{
+ 
+    margin: 0px;
+    display: flex;
+    background-color: #937b4f;
+    height: 100px;
+    min-width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.Header1{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+
+    
+  }
+.Header2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #937b4f;
+  width: 80%;
+  }
+.Header3{
+    width: 10%;
+    display: flex;
+    background-color: #937b4f;
+    height: 100px;
+
+  }
+.Menu{
+  
+    height: 50px;
+    width: 50px;
+    
+  
+  }
+.MenuButton{
+    
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden;
+    width: 50px;
+    
+    
+    }
+.MenuButtonIcon{
+    
+    height: 50px;
+    width: 25px;
+    color: black;
+  }
+.MenuButtonIcon:hover{
+    color: wheat;
+  }
+.Header1 li{
+    list-style: none;
+    position: relative;
+    
+  }
+.dropdown{
+    display: none; 
+  } 
+.Header1 li:hover .dropdown{
+    display: flex;
+    list-style: none;
+    background: rgb(185, 169, 139,.8);
+    position:absolute;
+    top:50px;
+    overflow: none;
+    z-index: 9999;
+  }
+  
+.ListContainer{
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+
+    
+  }
+.MenuList:hover{
+    background-color: #937b4f;
+  }
+.ListContainer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+
+}
+.ListContainer div a{
+    font-size: 15px;
+    font-weight: bold;
+  
+  }
+/* .Home{
+    height: 50px;
+    width: 50px;
+    
+  
+  }
+.HomeButton{
+  
+  outline: none;
+  border:none;
+  overflow: hidden;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  
+  }
+.HomeButtonIcon{
+    height: 50px;
+    width: 50px;
+    color: black;
+    
+  } */
+.Login {
+    height: 50px;
+    width: 10%;
+  }
+.LoginButton{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden; 
+    height: 100px;
+    
+  }
+  
+.LoginButtonIcon{
+    height: 50px;
+    width: 25px;
+    
+  }
+.LoginButtonIcon:hover{
+    color: wheat;
+  }
+.Header3 li{
+    list-style: none;
+    position: relative;
+  }
+  
+.LoginDropDown {
+    display: none;
+  }
+.Header3 li:hover .LoginDropDown {
+    display: flex;
+    flex-direction: column;
+    background: rgb(185, 169, 139,.8);
+    width: fit-content;
+    height: 100px;
+    position: absolute;
+    right: -10px;
+    top:75px;
+    overflow:hidden;
+    z-index: 9999;
+  }
+.LoginLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+    
+  }
+.LoginLink:hover {
+    background-color: rgb(146, 122, 79,.5);
+  }
+.LoginLink a{
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
+  }
+.SignupLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+  }
+.SignupLink:hover {
+    background-color: rgb(146, 122, 79,.5);
+  }
+.SignupLink a{
+    font-size: 20px;
+    font-weight: bold;
+    color:black
+  }
+.PageBanner {
+    display: flex;
+    height: 100px;
+    width: 230px;
+    justify-content: center;
+    background-image: url(layered.jpeg);
+  }
+.Banner{
+    
+    height: 100px;
+    width: 230px;
+  
+  }
+.Layered{
+    height: 100px;
+    width: 230px;
+  
+  
+  }
+main{
+    width: 100vw;
+    background-color: #dbc08ebb;
+    min-height: calc(100vh - 100px - 100px);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+.TransitionContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 100px - 100px);
+    background-color: rgb(186, 171, 144,.5);
+    overflow: hidden;
+  }
+  
+.Slider {
+    position: relative;
+    top: 20px;
+    height: 200px;
+    width: fit-content;
+    overflow: hidden;
+  }
+  
+.Images{
+    display: flex;
+    height: 200px;
+    width: 500%;
+  }
+.Image{
+    width: 20%;
+    transition: 2s;
+  }
+.Image img{
+    width: 100%;
+    height:200px;
+  }
+  
+.Images input{
+    display: none;
+  }
+  /*Manual btn for slides*/
+.dotscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  position: relative;
+}
+.Dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+.manualbtn{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid wheat;
+    cursor: pointer;
+    transition:all 0.15s ease;
+    margin: 5px;
+  
+  }
+.Dots label:hover{
+    background: #937b4f;
+  }
+#img1:checked ~ .first{
+    margin-left: 0;
+  }
+#img2:checked ~ .first{
+    margin-left: -20%;
+  }
+#img3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+.auto div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid wheat;
+    cursor: pointer;
+    transition:all 0.15s ease;
+    margin: 5px;
+  
+  }
+#img1:checked ~ .auto .autobtn1{
+    background: #937b4f;
+  }
+#img2:checked ~ .auto .autobtn2{
+    background: #937b4f;
+  }
+#img3:checked ~ .auto .autobtn3{
+    background: #937b4f;
+  }
+
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.subcontent{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+.subcontent2{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+.subcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentcontainer{
+  background-color: #937b4f;
+  border-radius: 20px;
+  display: flex;
+  height: 200px;
+  width: 80%;
+  margin: 10px 0;
+}
+.imgcontent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 50%;
+  border-right: 1px solid black;
+}
+.imgcontent img{
+  height: 60%;
+  width: 60%;
+  background-color: transparent;
+}
+.textcontent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: inherit;
+  width: 50%;
+  overflow: scroll;
+}
+.textcontent p{
+  margin-left: 10px;
+}
+.shopbutton1{
+  display: none;
+}
+.shopbutton2{
+  display: none;
+}
+.shopbutton3{
+  display: none;
+}
+.shopbutton4{
+  display: none;
+}
+.shopbutton{
+  width:50%;
+  height: 20%;
+  border-radius: 15%;
+  border: none;
+  background-color: black;
+}
+.shopbutton:hover{
+  background-color: gray;
+}
+.shopnow{
+  background-color: transparent;
+  border-radius: 15%;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.shopnow a{
+  text-decoration: none;
+  color: wheat;
+  font-weight: bold;
+}
+
+footer{
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+
+  }
+.PageFooter {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+  }
+.Footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:206px;  
+  }
+.Footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:206px;  
+  }
+.Empty{
+    height: 30px;
+  }
+.AboutUsbutton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+    }
+.AboutUsIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.AboutUstext{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+.ContactButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+    }
+.ContactIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.ContactText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+.VisitButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  }
+.VisitIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.VisitText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+.Signage {
+    height: 30px;
+    width: 140px;
+  }
+.Note{
+    position: relative;
+    top: 8;
+    left: 10;
+    color: wheat;
+  }
+.FacebookButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+.FacebookIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.FacebookText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+.TwitterButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+.TwitterIcon{
+    position: relative;
+    right: 8;
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.TwitterText{
+    position: relative;
+    bottom: 8;
+    left: -3;
+    color: wheat;
+  
+  }
+.InstagramButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+.InstagramIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+.InstagramText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+
+
+/*Screen display for 500px and above*/
+@media screen and (min-width:500px) {
+
+  header{
+    
+    width:100vw;
+  }
+  
+  .PageHeader{
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    background-color: #937b4f;
+    height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Header1{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Header2{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: #937b4f;
+  }
+  .Header3{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #937b4f;
+    width: 10%;
+    height: 100%;
+  }
+  .Menu{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+  
+  }
+  .MenuButton{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden;
+    width: 100px;
+    
+    }
+  .MenuButtonIcon{
+    
+    height: 50px;
+    width: 50px;
+    color: black;
+  }
+  .MenuButtonIcon:hover{
+    color: wheat;
+  }
+  .Header1 li{
+    list-style: none;
+    position: relative;
+  }
+  .dropdown{
+    display: none;
+  }
+  .Header1 li:hover .dropdown{
+    display: flex;
+    list-style: none;
+    background: rgb(185, 169, 139,.8);
+    position:absolute;
+    top:80px;
+    
+  }
+  
+  .ListContainer{
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+    
+  }
+  .Menulist:hover{
+    background-color: #937b4f;
+  }
+  .ListContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    color: black;
+  
+  }
+.ListContainer div a{
+    font-size: 25px;
+    font-weight: bold;
+  
+  }
+  /* .Home{
+    height: 100%;
+    width: 100%;
+  
+  }
+  .HomeButton{
+  outline: none;
+  border:none;
+  background-color: transparent;
+  width: 100px;
+  
+  
+  }
+  .HomeButtonIcon{
+    height: 50px;
+    width: 50px;
+    color: black;
+    
+  } */
+  .Login {
+   
+    height: 100%;
+    width: 10%;
+    
+  }
+  .LoginButton{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden; 
+    height: 100px;
+  }
+  
+  .LoginButtonIcon{
+    height: 50px;
+    width: 50px;
+    
+  }
+  .LoginButtonIcon:hover{
+    color: wheat;
+  }
+  .Header3 li{
+    list-style: none;
+    position: relative;
+  }
+  
+  .LoginDropDown {
+    display: none;
+  }
+  .Header3 li:hover .LoginDropDown {
+    display: flex;
+    flex-direction: column;
+    background: rgb(185, 169, 139,.8);
+    width: fit-content;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    top:80px;
+  }
+  .LoginLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 75px;
+    
+  }
+  .LoginLink:hover {
+    background-color: rgb(146, 122, 79,.5);
+  }
+  a .LoginLink{
+    font-size: 25px;
+    font-weight: bold;
+    color:black
+  }
+  .SignupLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 75px;
+  }
+  .SignupLink:hover {
+    background-color: rgb(146, 122, 79,.5);
+  }
+  a .SignupLink{
+    font-size: 25px;
+    font-weight: bold;
+    color:black
+  }
+  .PageBanner {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    background-image: url(layered.jpeg);
+  }
+  .Banner{
+    position: relative;
+    height: 100%;
+    width: 300px;
+  
+  }
+  .Layered{
+   
+    height: 100%;
+    width: 300px;
+  
+  
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: calc(100vh - 120px - 150px);
+    margin: 0 0;
+    padding: 0 20px
+  }
+  .TransitionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    min-height: calc(100vh - 120px - 150px);
+    background-color: rgb(147, 123, 74,.5);
+  }
+  
+  .Slider {
+    position: relative;
+    top: 20px;
+    height: 500px;
+    width: fit-content;
+    overflow: hidden;
+    
+  }
+  
+  .Images{
+    display: flex;
+    height: inherit;
+    width: 500%;
+  }
+  .Image{
+    width: 20%;
+    transition: 2s;
+  }
+  .Image img{
+    width: 100%;
+    height: max-content;
+  }
+  
+  .Images input{
+    display: none;
+  }
+  /*Manual btn for slides*/
+  .dotscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    position: relative;
+  }
+  .Dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .manualbtn{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid wheat;
+    cursor: pointer;
+    transition:all 0.15s ease;
+    margin: 5px;
+  
+  }
+  .Dots label:hover{
+    background: #937b4f;
+  }
+  #img1:checked ~ .first{
+    margin-left: 0;
+  }
+  #img2:checked ~ .first{
+    margin-left: -20%;
+  }
+  #img3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  .auto div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid wheat;
+    cursor: pointer;
+    transition:all 0.15s ease;
+    margin: 5px;
+  
+  }
+  #img1:checked ~ .auto .autobtn1{
+    background: #937b4f;
+  }
+  #img2:checked ~ .auto .autobtn2{
+    background: #937b4f;
+  }
+  #img3:checked ~ .auto .autobtn3{
+    background: #937b4f;
+  }
+  
+  .maincontent{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .maindivider{
+    display: flex;
+  }
+  .subcontent{
+    display: flex;
+    flex-direction: column   ;
+    width: inherit;
+  }
+  
+  .subcontent2{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+  }
+  .subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subcontent2 .contentcontainer{
+    background-color: #937b4f;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin: 10px 0;
+  }
+  .subcontent2 .imgcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid black;
+  }
+  .subcontent2 .textcontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+  }
+  .contentcontainer{
+    background-color: #937b4f;
+    border-radius: 20px;
+    display: flex;
+    height: 200px;
+    width: 80%;
+    margin: 10px 0;
+  }
+  .imgcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 50%;
+    border-right: 1px solid black;
+  }
+  .imgcontent img{
+    height: 60%;
+    width: 60%;
+    background-color: transparent;
+  }
+
+  .textcontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: inherit;
+    width: 50%;
+    overflow: hidden;
+  }
+  .textcontent p a {
+    display: none;
+  }
+  .next{
+    display: none;
+  }
+  .textcontent p{
+    margin-left: 10px;
+  }
+  .shopbutton{
+    display: none;
+  }
+.shopbutton1{
+  display: none;
+}
+.shopbutton2{
+    display: none;
+  }
+.shopbutton3{
+  display: none;
+}
+.shopbutton4{
+  display: none;
+}
+  
+
+ .subcontainer:hover .shopbutton1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:30%;
+    left:-50%;
+    width:150px;
+    height: 100px;
+    border-radius: 0;
+    background-color: rgb(186, 171, 144,.5);
+  }
+  .subcontainer:hover .shopbutton2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:30%;
+    left:-50%;
+    width:150px;
+    height: 100px;
+    border-radius: 0;
+    background-color: rgb(186, 171, 144,.5);
+  }
+  .subcontainer:hover .shopbutton3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:30%;
+    left:-40%;
+    width:150px;
+    height: 100px;
+    border-radius: 0;
+    background-color: rgb(186, 171, 144,.5);
+  }
+  .subcontainer:hover .shopbutton4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:60%;
+    left:-30%;
+    width:150px;
+    height: 100px;
+    border-radius: 0;
+    background-color: rgb(186, 171, 144,.5);
+  }
+
+  .shopnow{
+    background-color: black;
+    border-radius: 15%;
+    border: none;
+    width: 70%;
+    height: 50%;
+  }
+  .shopnow:hover{
+    background-color: gray;
+    cursor: pointer;
+  }
+  .shopnow a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+  }
+  footer{
+    height: 150px;
+    background-color: black;
+    width: 100vw;
+  }
+  .PageFooter {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+  }
+  .Footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  .Empty{
+    height: 30px;
+  }
+  .AboutUsbutton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+    }
+  .AboutUsIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .AboutUstext{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+    
+    .ContactButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+    }
+  .ContactIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .ContactText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .VisitButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  }
+  .VisitIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .VisitText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .Signage {
+    height: 30px;
+    width: 150px;
+  }
+  .Note{
+    position: relative;
+    top: 8;
+    left: 20;
+    color: wheat;
+  }
+  .FacebookButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .FacebookIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .FacebookText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+  .TwitterButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .TwitterIcon{
+    position: relative;
+    right: 8;
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .TwitterText{
+    position: relative;
+    bottom: 8;
+    left: -3;
+    color: wheat;
+  
+  }
+  .InstagramButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .InstagramIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .InstagramText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+}

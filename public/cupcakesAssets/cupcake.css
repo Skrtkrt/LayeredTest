@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+
+
+
+  }
+
+  body{
+    background-color: #eee;
+
+  }
+  /* Header Container */
+  
+  .PageHeader{
+   
+    margin: 0px;
+    display: flex;
+    background-color: #937b4f;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .Header1{
+   
+    display: flex;
+    flex-direction: row;
+  }
+  .Header2{
+  
+    background-color: #937b4f;
+  }
+  .Header3{
+   
+    display: flex;
+    background-color: #937b4f;
+    height: 200px;
+  }
+  .Menu{
+   
+    width: 50px;
+  
+  }
+  .MenuButton{
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden;
+    top:33;
+    width: 50px;
+    
+    }
+  .MenuButtonIcon{
+    
+    height: 40px;
+    width: 40px;
+    color: black;
+  }
+  .MenuButtonIcon:hover{
+    color: wheat;
+  }
+  li{
+    list-style: none;
+    position: relative;
+  }
+  .dropdown{
+    display: none;
+  }
+  .Header1 li:hover .dropdown{
+    display: flex;
+    list-style: none;
+    background: rgb(185, 169, 139);
+    position:absolute;
+    top:70;
+    width: 200;
+    height:300;
+    
+  }
+  
+  .dropdown ul{
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  .dropdown ul li:hover{
+    background-color: #937b4f;
+  }
+  .dropdown ul li a{
+    font-size: 30px;
+    font-weight: bold;
+  
+  }
+  .Home{
+    height: 100px;
+    width: 50px;
+  
+  }
+  .HomeButton{
+  
+  outline: none;
+  border:none;
+  overflow: hidden;
+  background-color: transparent;
+  height: 100px;
+  width: 50px;
+  
+  }
+  .HomeButtonIcon{
+    height: 30px;
+    width: 30px;
+    color: black;
+    
+  }
+  .Login {
+    height: 200px;
+    
+  }
+  .LoginButton{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden; 
+    height: 100px;
+    
+  }
+  
+  .LoginButtonIcon{
+    height: 30px;
+    width: 30px;
+    
+  }
+  .PageBanner {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    background-image: url(layered.jpeg);
+  }
+  .Banner{
+    height: 100px;
+    width: 140px;
+  
+  }
+  .Layered{
+    height: 100px;
+    width: 140px;
+  
+  
+  }
+  main{
+    width: 100vw;
+    min-height: calc(100vh - 100px - 100px);
+    margin: 0 auto;
+    padding: 0 20px
+  }
+  
+  
+  footer{
+    height: 150px;
+    background-color: black;
+  }
+  .PageFooter {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+  }
+  .Footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  .Empty{
+    height: 30px;
+  }
+  .AboutUsbutton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+    }
+  .AboutUsIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .AboutUstext{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+    
+    .ContactButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+    }
+  .ContactIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .ContactText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .VisitButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  }
+  .VisitIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .VisitText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .Signage {
+    height: 30px;
+    width: 140px;
+  }
+  .Note{
+    position: relative;
+    top: 8;
+    left: 10;
+    color: wheat;
+  }
+  .FacebookButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+  .FacebookIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .FacebookText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+  .TwitterButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+  .TwitterIcon{
+    position: relative;
+    right: 8;
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .TwitterText{
+    position: relative;
+    bottom: 8;
+    left: -3;
+    color: wheat;
+  
+  }
+  .InstagramButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+  .InstagramIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .InstagramText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+  
+  /*Screen display for 412px and above*/
+  @media screen and (min-width:750px) {
+    
+  
+  .PageHeader{
+   
+    margin: 0px;
+    display: flex;
+    background-color: #937b4f;
+    height: 200px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .Header1{
+    width: 250;
+    display: flex;
+    flex-direction: row;
+  }
+  .Header2{
+  
+    background-color: #937b4f;
+  }
+  .Header3{
+   
+    display: flex;
+    background-color: #937b4f;
+    height: 200px;
+  }
+  .Menu{
+   
+    width: 100px;
+  
+  }
+  .MenuButton{
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden;
+    top:60;
+    width: 100px;
+    
+    }
+  .MenuButtonIcon{
+    
+    height: 100px;
+    width: 100px;
+    color: black;
+  }
+  .MenuButtonIcon:hover{
+    color: wheat;
+  }
+  li{
+    list-style: none;
+    position: relative;
+  }
+  .dropdown{
+    display: none;
+  }
+  .Header1 li:hover .dropdown{
+    display: flex;
+    list-style: none;
+    background: rgb(185, 169, 139);
+    position:absolute;
+    top:150;
+    width: 200;
+    height:300;
+    
+  }
+  
+  .dropdown ul{
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    
+  }
+  .dropdown ul li:hover{
+    background-color: #937b4f;
+  }
+  .dropdown ul li a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  
+  }
+  .Home{
+    height: 100px;
+    width: 50px;
+  
+  }
+  .HomeButton{
+  position: relative;
+  outline: none;
+  border:none;
+  overflow: hidden;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  top: 50;
+  
+  }
+  .HomeButtonIcon{
+    height: 100px;
+    width: 100px;
+    color: black;
+    
+  }
+  .Login {
+    height: 200px;
+    
+  }
+  .LoginButton{
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    overflow: hidden; 
+    top:50px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .LoginButtonIcon{
+    height: 100px;
+    width: 100px;
+    
+  }
+  .PageBanner {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    background-image: url(layered.jpeg);
+  }
+  .Banner{
+    height: 200px;
+    width: 300px;
+  
+  }
+  .Layered{
+   
+    height: 200px;
+    width: 250px;
+  
+  
+  }
+  main{
+    width: 100vw;
+    min-height: calc(100vh - 100px - 200px);
+    margin: 0 auto;
+    padding: 0 20px
+  }
+  
+  
+  footer{
+    height: 150px;
+    background-color: black;
+  }
+  .PageFooter {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+  }
+  .Footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  .Empty{
+    height: 30px;
+  }
+  .AboutUsbutton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+    }
+  .AboutUsIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .AboutUstext{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+    
+    .ContactButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+    }
+  .ContactIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .ContactText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .VisitButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  }
+  .VisitIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .VisitText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  }
+  .Signage {
+    height: 30px;
+    width: 150px;
+  }
+  .Note{
+    position: relative;
+    top: 8;
+    left: 20;
+    color: wheat;
+  }
+  .FacebookButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .FacebookIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .FacebookText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+  .TwitterButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .TwitterIcon{
+    position: relative;
+    right: 8;
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .TwitterText{
+    position: relative;
+    bottom: 8;
+    left: -3;
+    color: wheat;
+  
+  }
+  .InstagramButton{
+    outline: none;
+    border:none;
+    overflow: hidden;
+    background-color: transparent;
+    width: 150px;
+  
+  }
+  .InstagramIcon{
+    width: 30px;
+    height: 30px;
+    color: #937b4f;
+  }
+  .InstagramText{
+    position: relative;
+    bottom: 8;
+    left: 5;
+    color: wheat;
+  
+  }
+  }
+
+
+.TransitionContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+  background-color: #eee;
+}
+
+.TransitionContainer .cupcake{
+  font-size: 3.5rem;
+  color: #444;
+  background-color: #eee;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.TransitionContainer .productscontainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  
+  text-align: center;
+}
+
+.TransitionContainer .productscontainer .products{
+  text-align: center;
+  padding: 3rem 0rem;
+  background-color:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: .1rem solid #dddada;
+  outline-offset: -1.5rem;
+}
+.TransitionContainer .productscontainer .products img{
+  height: 25rem;
+  width: 350px;
+}
+
+.TransitionContainer .productscontainer .products:hover img{
+  transform: scale(.9);
+}
+
+.TransitionContainer .productscontainer .products:hover{
+  outline: .2rem solid #222;
+  outline-offset: 0;
+}
+
+.TransitionContainer .productscontainer .products:hover h3{
+  color: #937b4f;
+}
+
+.TransitionContainer .productscontainer .products h3{
+  padding: .5rem 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+.TransitionContainer .productscontainer .products .price{
+  padding: .5rem 0;
+  font-size: 2rem;
+  color: #444;
+}
+.TransitionContainer .productscontainer .products .button{
+  flex-wrap: wrap;
+  margin-top: 10;
+
+}
+.TransitionContainer .productscontainer .products .button a{
+  border: 0.1rem solid #444;
+  background-color: beige;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  flex: 1 1 16rem;
+  color: black;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10);
+}
+
+.TransitionContainer .productscontainer .products .button a.buy:hover{
+  background-color: rgb(243, 243, 198);
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 55%;
+
+  }
+}
+
+@media (max-width:991px){
+  html{
+    font-size: 60%;
+
+  }
+}
+
+
+@media (max-width:768px){
+  .TransitionContainer .productscontainer .products img{
+    height: 25rem;
+    width: 230px;
+  }
+}
